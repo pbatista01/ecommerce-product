@@ -45,7 +45,7 @@ function Hero ({onAddToCart}){
     }
    
     return(
-        <section className="flex flex-col lg:flex-row lg:py-23.5 lg:px-40">
+        <section className="flex flex-col lg:flex-row lg:py-23.5 lg:gap-24 lg:pl-54 lg:pr-36">
             <div className="relative flex flex-col gap-8">
                 <button className="w-10 h-10 rounded-full bg-white absolute top-[45%] left-4 justify-items-center cursor-pointer lg:hidden" onClick={prevImage}><img src={previousBtn} alt="previous button" className="w-2.5 h-3.5"/></button>
                 <img src={gallery[currentImageIndex]} alt="product image" className="lg:rounded-2xl"/>
@@ -56,10 +56,10 @@ function Hero ({onAddToCart}){
                 ))}
                 </div>
             </div>
-            <div className="flex flex-col gap-2 px-7 py-5.5 lg:gap-4">
+            <div className="flex flex-col gap-2 px-7 py-5.5 lg:py-6 lg:gap-3.5">
                 <h3 className="uppercase text-[0.75rem] tracking-[2px] text-brand-primary font-bold lg:text-[0.8rem]">Sneaker Company</h3>
-                <h2 className="font-bold text-content-main tracking-wide text-[1.75rem] leading-8.5 lg:text-[2.8rem] lg:leading-12">Fall Limited Edition Sneakers</h2>
-                <p className="text-content-body text-[0.979rem] mt-2.5 leading-6 lg:mt-5">These low-profiles sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                <h2 className="font-bold text-content-main tracking-wide text-[1.75rem] leading-8.5 lg:text-[2.61rem] lg:leading-11.5">Fall Limited Edition Sneakers</h2>
+                <p className="text-content-body text-[0.979rem] mt-2.5 leading-6.5 lg:mt-6">These low-profiles sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
                 <div className="flex flex-row justify-between items-center mt-4.5 lg:flex-col lg:items-start lg:gap-2">
                     <div className="flex flex-row gap-4 items-center">
                         <h2 className="font-bold text-3xl">$125.00</h2>
